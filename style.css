@@ -371,14 +371,15 @@ footer .layar-dalam .copyright {
     display: flex;
   }
   .blog .area {
-    display: block;
+    display: block !important;
+    width: 100% !important;
   }
   .blog div.area div {
-    width: 100%;
+    width: 100% !important;
   }
   .blog .area .gambar {
-    border-radius: 5px 5px 0px 0px;
-    height: 200px;
+    border-radius: 5px 5px 0px 0px !important;
+    height: 200px !important;
   }
   .support {
     display: block;
