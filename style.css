@@ -331,7 +331,6 @@ footer {
 }
 footer .layar-dalam {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -358,6 +357,10 @@ footer .layar-dalam .copyright {
   .layar-dalam {
     width: 90%;
   }
+  footer .layar-dalam {
+  display: block;
+  width: 100%;
+}
   nav .menu ul {
     display: none;
     margin-top: 60px;
