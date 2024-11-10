@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Healthy Life - Live Better, Feel Healthier</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -123,8 +123,8 @@
               accessible for everyone.
             </p>
             <div class="slider">
-              <div class="slides">
-                <div class="slide">
+              <div class="slidesSatu">
+                <div class="slideSatu">
                   <img src="asset/orang1.jpg" />
                   <h6>Elziah Cholifah Taslim</h6>
                   <h4>2602173085</h4>
@@ -135,7 +135,7 @@
                     <p>Email : elziahcholifahtaslim@gmail.com</p>
                   </span>
                 </div>
-                <div class="slide">
+                <div class="slideSatu">
                   <img src="asset/orang2.jpg" />
                   <h6>Shakira Keumala Putri Wallad</h6>
                   <h4>2602158115</h4>
@@ -146,7 +146,7 @@
                     <p>Email : shakira.wallad@gmail.com</p>
                   </span>
                 </div>
-                <div class="slide">
+                <div class="slideSatu">
                   <img src="asset/orang3.jpg" />
                   <h6>Ni Made Anantha Kusuma Wardani</h6>
                   <h4>2602174112</h4>
@@ -157,7 +157,7 @@
                     <p>Email : m.anantha10@gmail.com</p>
                   </span>
                 </div>
-                <div class="slide">
+                <div class="slideSatu">
                   <img src="asset/orang4.jpg" />
                   <h6>MARIA ALIANI CHINDY IRWANTI MBULA</h6>
                   <h4>2602232592</h4>
@@ -169,8 +169,8 @@
                   </span>
                 </div>
               </div>
-              <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-              <button class="next" onclick="moveSlide(1)">&#10095;</button>
+              <button class="prev" onclick="moveSlideSatu(-1)">&#10094;</button>
+              <button class="next" onclick="moveSlideSatu(1)">&#10095;</button>
             </div>
           </div>
         </section>
@@ -281,13 +281,19 @@
         <div class="layar-dalam">
           <div>
             <h5>Info</h5>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-            sunt?
+            Healthy Life is an informative platform dedicated to providing
+            accurate, accessible health information for the people of Indonesia.
+            We aim to promote healthy living and raise awareness on the
+            importance of health as everyone's greatest asset.
           </div>
           <div>
             <h5>Contact</h5>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam,
-            sunt?
+            <p>
+              Jl. Kebon Mangga 3 No. 17, Kebayoran Lama, Jakarta Selatan,
+              Jakarta, Indonesia 11230
+            </p>
+            <p>+62 895-3748-89618</p>
+            <p>elziahcholifahtaslim@gmail.com</p>
           </div>
           <!-- <div>
             <h5>Help</h5>
@@ -314,21 +320,21 @@
     <script>
       let slideIndex = 0;
 
-      function showSlides() {
-        const slides = document.querySelector(".slides");
-        const totalSlides = document.querySelectorAll(".slide").length;
+      function showSlidesSatu() {
+        const slides = document.querySelector(".slidesSatu");
+        const totalSlides = document.querySelectorAll(".slideSatu").length;
         if (slideIndex >= totalSlides) slideIndex = 0;
         if (slideIndex < 0) slideIndex = totalSlides - 1;
         slides.style.transform = `translateX(-${slideIndex * 100}%)`;
       }
 
-      function moveSlide(n) {
+      function moveSlideSatu(n) {
         slideIndex += n;
-        showSlides();
+        showSlidesSatu();
       }
 
       // Initialize the slider
-      showSlides();
+      showSlidesSatu();
     </script>
   </body>
 </html>
