@@ -10,7 +10,9 @@
     <div class="layar-penuh">
       <section id="team">
         <div class="layar-dalam">
-          <h3>Healthy Life - Live Better, Feel Healthier</h3>
+          <h3 style="line-height: 1.2">
+            Tips Manajemen Waktu Tidur untuk Hidup Sehat
+          </h3>
           <!-- <p class="ringkasan">
             Meet our passionate team members from around the world, dedicated to
             inspiring a healthier lifestyle through knowledge, innovation, and
@@ -18,28 +20,81 @@
             accessible for everyone.
           </p> -->
           <div class="slider">
-            <div class="slides">
-              <div class="slide">
+            <div class="slidesSatu">
+              <div class="slideSatu">
                 <img src="asset/Wake Refreshed.png" />
               </div>
-              <div class="slide">
+              <div class="slideSatu">
                 <img src="asset/2.png" />
               </div>
-              <div class="slide">
+              <div class="slideSatu">
                 <img src="asset/3.png" />
               </div>
-              <div class="slide">
+              <div class="slideSatu">
                 <img src="asset/4.png" />
               </div>
-              <div class="slide">
+              <div class="slideSatu">
                 <img src="asset/5.png" />
               </div>
-              <div class="slide">
+              <div class="slideSatu">
                 <img src="asset/6.png" />
               </div>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moveSlideSatu(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlideSatu(1)">&#10095;</button>
+          </div>
+        </div>
+      </section>
+      <section class="abuabu" id="team">
+        <div class="layar-dalam">
+          <h3 style="line-height: 1.2">Rekomendasi Konten Kreator</h3>
+          <!-- <p class="ringkasan">
+            Meet our passionate team members from around the world, dedicated to
+            inspiring a healthier lifestyle through knowledge, innovation, and
+            community. Together, we’re committed to making healthy living
+            accessible for everyone.
+          </p> -->
+          <div class="slider">
+            <div class="slidesDua">
+              <div class="slideDua">
+                <img src="asset/Title Page.png" />
+                <a
+                  href="https://youtube.com/@yuliabaltschun?si=RPLuwNUDVU_l97vM"
+                  target="_blank"
+                >
+                  <h6>Nonton Selengkapnya Disini!</h6>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="asset/Topic Page.png" />
+                <a
+                  href="https://youtube.com/@eholahragayuk?si=hoif-rTQQc9q6YyS"
+                  target="_blank"
+                >
+                  <h6>Nonton Selengkapnya Disini!</h6>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="asset/Discussion Page.png" />
+                <a
+                  href="https://youtube.com/@analisa431?si=XukPN7iI6twFWmcJ"
+                  target="_blank"
+                >
+                  <h6>Nonton Selengkapnya Disini!</h6>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="asset/Discussion Page (2).png" />
+                <a
+                  href="https://youtu.be/S5L2rvopTIE?si=sU7lTSYa3ghnymjf"
+                  target="_blank"
+                >
+                  <h6>Nonton Selengkapnya Disini!</h6>
+                </a>
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlideDua(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlideDua(1)">&#10095;</button>
           </div>
         </div>
       </section>
@@ -47,21 +102,35 @@
     <script>
       let slideIndex = 0;
 
-      function showSlides() {
-        const slides = document.querySelector(".slides");
-        const totalSlides = document.querySelectorAll(".slide").length;
+      function showSlidesSatu() {
+        const slides = document.querySelector(".slidesSatu");
+        const totalSlides = document.querySelectorAll(".slideSatu").length;
         if (slideIndex >= totalSlides) slideIndex = 0;
         if (slideIndex < 0) slideIndex = totalSlides - 1;
         slides.style.transform = `translateX(-${slideIndex * 100}%)`;
       }
 
-      function moveSlide(n) {
+      function showSlidesDua() {
+        const slides = document.querySelector(".slidesDua");
+        const totalSlides = document.querySelectorAll(".slideDua").length;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      function moveSlideSatu(n) {
         slideIndex += n;
-        showSlides();
+        showSlidesSatu();
+      }
+
+      function moveSlideDua(n) {
+        slideIndex += n;
+        showSlidesDua();
       }
 
       // Initialize the slider
-      showSlides();
+      showSlidesSatu();
+      showSlidesDua();
     </script>
   </body>
 </html>
