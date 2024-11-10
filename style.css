@@ -358,10 +358,11 @@ footer .layar-dalam .copyright {
     width: 90%;
   }
   footer .layar-dalam {
-  display: block;
-  width: 100%;
-  margin: 20px;
-}
+    display: block;
+    width: 100%;
+    margin: 20px;
+    word-wrap: break-word;
+  }
   nav .menu ul {
     display: none;
     margin-top: 60px;
