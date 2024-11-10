@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Life - Live Better, Feel Healthier</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layar-penuh">
+      <section id="team">
+        <div class="layar-dalam">
+          <h3>Healthy Life - Live Better, Feel Healthier</h3>
+          <!-- <p class="ringkasan">
+            Meet our passionate team members from around the world, dedicated to
+            inspiring a healthier lifestyle through knowledge, innovation, and
+            community. Together, we’re committed to making healthy living
+            accessible for everyone.
+          </p> -->
+          <div class="slider">
+            <div class="slides">
+              <div class="slide">
+                <img src="asset/Wake Refreshed.png" />
+              </div>
+              <div class="slide">
+                <img src="asset/2.png" />
+              </div>
+              <div class="slide">
+                <img src="asset/3.png" />
+              </div>
+              <div class="slide">
+                <img src="asset/4.png" />
+              </div>
+              <div class="slide">
+                <img src="asset/5.png" />
+              </div>
+              <div class="slide">
+                <img src="asset/6.png" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      let slideIndex = 0;
+
+      function showSlides() {
+        const slides = document.querySelector(".slides");
+        const totalSlides = document.querySelectorAll(".slide").length;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      function moveSlide(n) {
+        slideIndex += n;
+        showSlides();
+      }
+
+      // Initialize the slider
+      showSlides();
+    </script>
+  </body>
+</html>
