@@ -334,6 +334,9 @@ footer .layar-dalam {
   flex-direction: row;
   justify-content: space-between;
 }
+.isiContact {
+  word-wrap: break-word;
+}
 footer .layar-dalam div {
   width: 100%;
   margin-right: 10px;
