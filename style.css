@@ -22,7 +22,7 @@ body {
 }
 nav {
   z-index: 100;
-  color: #fff;
+  color: #f2e8cc;
   text-align: center;
   position: fixed;
   border-bottom: 1px solid #b1b1b1;
@@ -31,7 +31,7 @@ nav {
   transition: background-color 0.5s ease;
 }
 nav.putih {
-  background-color: #fff;
+  background-color: #de3891;
 }
 nav .logo {
   float: left;
@@ -154,27 +154,26 @@ section h3::after {
   text-align: center;
 }
 section p.ringkasan {
-  font-style: italic;
   font-size: 18px;
-  color: #ababab;
+  color: #236130;
 }
 section .konten-isi p {
   font-style: normal;
 }
 nav.putih {
-  background-color: #fff;
+  background-color: #de3891;
 }
 nav.putih .tombol-menu .garis {
   background-color: #333;
 }
 nav.putih ul li a {
-  color: #333;
+  color: #f2e8cc;
 }
 nav .logo img.hitam {
   display: none;
 }
 section.abuabu {
-  background-color: #f5f6f6;
+  background-color: #ababab;
 }
 .support,
 .tim {

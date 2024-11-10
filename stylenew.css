@@ -176,7 +176,8 @@ section.abuabu {
   background-color: #f5f6f6;
 }
 .support,
-.tim {
+.tim,
+.blog {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
