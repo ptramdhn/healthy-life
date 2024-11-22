@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rahasia Hidup Panjang: Mengapa Hidup Sehat adalah Investasi Terbaik Anda
+    </title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2e8cc;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#blog" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>
+          Rahasia Hidup Panjang: Mengapa Hidup Sehat adalah Investasi Terbaik
+          Anda
+        </h1>
+        <img
+          src="../../asset/artikel5.jpg"
+          alt="Hidup Sehat"
+          class="center-image"
+        />
+      </header>
+      <main id="content">
+        <!-- Konten akan dimuat melalui JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 Fit Life Guide</p>
+      </footer>
+    </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Di tengah kesibukan dan rutinitas yang padat, seringkali kita mengabaikan pentingnya menjaga
+                kesehatan. Pola hidup sehat sering dianggap merepotkan, atau bahkan terlalu mahal untuk dijalani.
+                Padahal, kesehatan adalah aset terbesar yang kita miliki, dan menjaga tubuh serta pikiran tetap sehat
+                merupakan investasi jangka panjang yang paling menguntungkan.
+            </article>
+            <p>Mengapa Hidup Sehat Itu Penting?</p>
+            <ol>
+                <li>
+                    <article>
+                        <strong>Meningkatkan Kualitas Hidup</strong><br>
+                        Kesehatan yang optimal memungkinkan kita untuk menikmati hidup tanpa hambatan fisik dan
+                        menjalankan aktivitas kita menjadi lebih baik. Hidup sehat tidak hanya memberikan energi untuk
+                        aktivitas kita sehari-hari, tetapi juga membantu kita menikmati waktu yang berkualitas bersama orangorang yang kita cintai.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Pencegahan Penyakit Kronis</strong><br>
+                        Jika kita melakukan pola hidup yang buruk itu dapat meningkatkan risiko penyakit kronis yang kita miliki. 
+                        Dengan menjalankan gaya hidup sehat seperti makan makanan bergizi, rutin berolahraga, dan menghindari kebiasaan buruk 
+                        seperti makan makanan yang kurang sehat bagi tubuh.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Meningkatkan Kesehatan Tubuh</strong><br>
+                        Hidup sehat dapat meningkat jika kita melakukan pola hidup yang sehat. Dengan cara mengatur pola makan yang baik 
+                        serta olahraga yang cukup. Ini dapat membantu tubuh melepaskan hormon endorfin yang cukup baik bagi suasana hati kita. 
+                        Selain itu, kita juga membutuhkan istirahat yang baik, ini juga merupakan suatu hal yang positif dalam meningkatkan 
+                        kesehatan tubuh kita.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Memperpanjang Usia Harapan Hidup</strong><br>
+                        Berbagai penelitian telah menunjukkan bahwa kita yang menerapkan gaya hidup sehat dapat memiliki usia harapan hidup yang lebih panjang. 
+                        Kebiasaan seperti tidur cukup, menjaga pola makan yang seimbang, dan aktif secara fisik dapat memperlambat proses penuaan alami tubuh.
+                    </article>
+                </li>
+            </ol>
+            <p>Cara Memulai Gaya Hidup Sehat</p>
+            <ol>
+                <li>
+                    <article>
+                        <strong>Perbaiki pola makan:</strong> Konsumsi lebih banyak sayuran, buah-buahan, protein berkualitas, serta kurangi makanan olahan dan gula berlebih.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Rutin Berolahraga:</strong> Mulailah dengan olahraga ringan, seperti berjalan kaki atau bersepeda, dan tingkatkan intensitas secara bertahap.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Tidur yang Cukup:</strong> Tidur adalah waktu bagi tubuh untuk memperbaiki diri. Cobalah tidur setidaknya 7-8 jam setiap malam.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Kelola Stres:</strong> Dengan cara bersantai dan mengolah stres, seperti meditasi, yoga, atau kegiatan yang disukai.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Minum Air yang Cukup:</strong> Air berperan penting sekali dalam kesehatan kita dalam menjaga fungsi tubuh, termasuk menjaga konsentrasi dan energi tubuh.
+                    </article>
+                </li>
+            </ol>
+            <article>
+                Menjaga gaya hidup sehat adalah salah satu pilihan terbaik yang tidak bisa diabaikan jika kita ingin
+                menjalankan hidup yang panjang, bahagia, dan berkualitas. Dengan pola hidup sehat, kita tidak hanya
+                memelihara tubuh dan pikiran, tetapi juga membangun masa depan yang lebih baik dan penuh peluang.
+                Tingkatkan waktu dan usaha dalam kesehatan Anda sekarang, karena kesehatan adalah aset paling
+                berharga yang tidak ternilai harganya dan hidup kita cuma sekali saja, maka peduli dengan kesehatan
+                Anda.<br>
+                <strong>Ayo mulai hidup sehat sekarang!</strong>
+            </article>
+            <br>
+            <article>
+                Referensi : <br>
+                <a href="https://www.prudential.co.id/id/pulse/article/mengapa-investasi-kesehatan-itu-penting/">
+                    https://www.prudential.co.id/id/pulse/article/mengapa-investasi-kesehatan-itu-penting/
+                </a>
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Memahami Penyebab dan Dampak Overweight: Langkah Awal Menuju Hidup Sehat
+    </title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2e8cc;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#blog" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>
+          Memahami Penyebab dan Dampak Overweight: Langkah Awal Menuju Hidup
+          Sehat
+        </h1>
+        <img
+          src="../../asset/artikel3.webp"
+          alt="Hidup Sehat"
+          class="center-image"
+        />
+      </header>
+      <main id="content">
+        <!-- Konten akan dimuat melalui JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 Fit Life Guide</p>
+      </footer>
+    </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Banyak orang mengalami overweight atau berat badan berlebih, yang menjadi masalah
+                kesehatan global yang semakin meningkat. Fenomena ini disebabkan oleh berbagai faktor
+                yang saling berinteraksi, mulai dari pola makan hingga gaya hidup. Berikut adalah beberapa
+                penyebab utama mengapa banyak orang mengalami overweight.
+            </article>
+            <p>Penyebab Utama Overweight : </p>
+            <ol>
+                <li>
+                    <article>
+                        <strong>Ketidakseimbangan Energi</strong><br>
+                        Overweight terjadi ketika kalori yang dikonsumsi melebihi kalori yang dibakar oleh tubuh.
+                        Pola makan yang tinggi kalori, terutama dari makanan cepat saji dan minuman manis,
+                        berkontribusi besar pada penumpukan lemak tubuh12. Makanan ini sering kali rendah nutrisi
+                        tetapi tinggi lemak dan gula, sehingga mudah menyebabkan kelebihan kalori.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Gaya Hidup Sedentari</strong><br>
+                        Perubahan gaya hidup modern, di mana banyak orang menghabiskan waktu berjam-jam di depan komputer atau televisi, menyebabkan penurunan aktivitas fisik. Kurangnya olahraga membuat tubuh tidak membakar kalori sebanyak yang seharusnya, sehingga kalori berlebih disimpan sebagai lemak.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Faktor Genetik</strong><br>
+                        Genetika juga memainkan peran penting dalam predisposisi seseorang terhadap overweight. 
+                        Beberapa orang mungkin memiliki kecenderungan genetik untuk menyimpan kalori lebih efisien 
+                        atau memiliki metabolisme yang lebih lambat. Kondisi genetik tertentu, seperti sindrom Prader-Willi, 
+                        juga dapat menyebabkan kesulitan dalam mengatur berat badan.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Gangguan Hormon dan Medis</strong><br>
+                        Beberapa gangguan hormonal, seperti hipotiroidisme dan sindrom Cushing, dapat 
+                        menyebabkan peningkatan berat badan. Gangguan ini mempengaruhi metabolisme dan cara 
+                        tubuh mengolah makanan menjadi energi. Selain itu, penggunaan obat-obatan tertentu juga 
+                        dapat memicu kenaikan berat badan sebagai efek samping.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Kebiasaan Makan Emosional</strong><br>
+                        Banyak orang cenderung makan lebih banyak saat mengalami stres, depresi, atau emosi 
+                        negatif lainnya. Kebiasaan ini sering kali mengarah pada konsumsi makanan tinggi kalori 
+                        sebagai cara untuk mengatasi perasaan tersebut.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Persepsi Budaya</strong><br>
+                        Dalam beberapa budaya, ada pandangan bahwa tubuh yang lebih besar adalah tanda 
+                        kesehatan dan kemakmuran. Hal ini bisa mempengaruhi cara orang memandang berat badan 
+                        dan pola makan mereka. Misalnya, di beberapa negara Afrika, kelebihan berat badan sering 
+                        dianggap sebagai simbol status sosial.
+                    </article>
+                </li>
+            </ol>
+            <article>
+                <strong>Dampak dari Overweight</strong><br>
+                Overweight dapat menyebabkan berbagai masalah kesehatan serius, termasuk diabetes tipe 2,
+                penyakit jantung, hipertensi, dan gangguan pernapasan seperti sleep apnea1. Selain itu,
+                kondisi ini juga dapat memengaruhi kesehatan mental seseorang, menyebabkan rasa tidak
+                percaya diri dan depresi.
+            </article>
+            <br>
+            <article>
+                <strong>Kesimpulan</strong><br>
+                Overweight adalah masalah kompleks yang dipengaruhi oleh berbagai faktor, termasuk pola
+                makan yang buruk, gaya hidup sedentari, genetika, gangguan hormonal, kebiasaan emosional
+                dalam makan, dan persepsi budaya. Untuk mencegah overweight, penting untuk menerapkan
+                gaya hidup sehat dengan pola makan seimbang dan aktif secara fisik. Meningkatkan
+                kesadaran tentang faktor-faktor ini dapat membantu individu mengambil langkah-langkah
+                proaktif untuk menjaga kesehatan mereka.
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>

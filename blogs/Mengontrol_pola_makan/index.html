@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      7 Aplikasi Terbaik untuk Membantu Mengontrol Pola Makan dan Diet Anda
+    </title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2e8cc;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#blog" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>
+          7 Aplikasi Terbaik untuk Membantu Mengontrol Pola Makan dan Diet Anda
+        </h1>
+        <img
+          src="https://fitlifeguide.vercel.app/asset/artikel2.webp"
+          alt="Hidup Sehat"
+          class="center-image"
+        />
+      </header>
+      <main id="content">
+        <!-- Konten akan dimuat melalui JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 Fit Life Guide</p>
+      </footer>
+    </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Mengontrol pola makan saat menjalani diet bisa menjadi tantangan, tetapi dengan bantuan aplikasi yang tepat, proses ini bisa menjadi lebih mudah dan menyenangkan.Berikut adalah beberapa aplikasi yang direkomendasikan untuk membantu Anda dalam mengatur pola makan dan mencapai tujuan diet Anda.
+            </article>
+            <p>Aplikasi Diet Terbaik : </p>
+            <ol>
+                <li>
+                    <article>
+                        <strong>MyFitnessPal</strong><br>
+                        <img
+                          src="../../asset/MyFitnessPal logo.png"
+                          alt="MyFitnessPal logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      MyFitnessPal adalah salah satu aplikasi penghitung kalori terpopuler dengan database lebih dari 5 juta jenis makanan. Aplikasi ini memungkinkan pengguna untuk melacak asupan kalori dan nutrisi dengan mudah, serta menawarkan fitur pemindai barcode untuk memudahkan pencatatan makanan.Antarmuka yang bersih dan ramah pengguna membuatnya mudah digunakan.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Lose It!</strong><br>
+                        <img
+                          src="../../asset/Lose It Logo.jpg"
+                          alt="Lose It! logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      Lose It! menawarkan fitur sederhana untuk mencatat makanan dan melacak berat badan.Pengguna dapat memasukkan rincian profil dan target berat badan, dan aplikasi ini akan menghitung anggaran kalori harian. Fitur unik seperti pemindaian barcode dan Snap It (mengambil foto makanan) membuat pencatatan lebih praktis.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Noom</strong><br>
+                        <img
+                          src="../../asset/Noom Logo.png"
+                          alt="Noom logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      Noom menggunakan pendekatan berbasis psikologi untuk membantu pengguna mengubah kebiasaan makan mereka. Aplikasi ini tidak hanya fokus pada pengurangan kalori, tetapi juga membantu membangun kebiasaan sehat jangka panjang. Noom terkenal dengan program pelatihan yang disusun oleh ahli gizi dan dokter.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Google Fit dan Apple Health</strong><br>
+                        <img
+                          src="../../asset/Google Fit dan Apple Health Logo.jpg"
+                          alt="Google Fit dan Apple Health logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      Kedua aplikasi ini sering kali sudah terpasang di smartphone Anda. Google Fit dan Apple Health memungkinkan pengguna untuk melacak aktivitas fisik, kalori yang terbakar, serta kemajuan kesehatan secara keseluruhan. Keduanya juga terintegrasi dengan berbagai aplikasi kesehatan lainnya.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>HealthifyMe</strong><br>
+                        <img
+                          src="../../asset/HealthifyMe Logo.png"
+                          alt="HealthifyMe logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      HealthifyMe membantu pengguna memahami asupan makanan mereka dengan memberikan wawasan tentang nutrisi. Aplikasi ini juga memberikan tips untuk meningkatkan kebiasaan sehat, seperti mengingatkan untuk minum air cukup dan berolahraga.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Fat Secret</strong><br>
+                        <img
+                          src="../../asset/Fat Secret Logo.png"
+                          alt="Fat Secret logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      Fat Secret adalah aplikasi yang berguna untuk menghitung kalori dari berbagai makanan. Selain itu, aplikasi ini memiliki komunitas di mana pengguna dapat berbagi resep dan tips diet, menjadikannya lebih interaktif dan menyenangkan.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Yazio</strong><br>
+                        <img
+                          src="../../asset/Yazio logo.png"
+                          alt="Yazio logo"
+                          style="width: 10%; align: left;"
+                        />
+                    </article>
+                    <article>
+                      Yazio adalah aplikasi yang cocok bagi mereka yang tertarik pada diet puasa atau intermittent fasting. Aplikasi ini menyediakan berbagai rencana puasa serta pelacak asupan air dan nutrisi.
+                    </article>
+                </li>
+            </ol>
+            <article>
+                <strong>Kesimpulan:</strong><br>
+                Dengan menggunakan aplikasi-aplikasi di atas, Anda dapat lebih mudah mengontrol pola makan dan mencapai tujuan diet Anda. Setiap aplikasi memiliki keunikan dan fitur yang berbeda, sehingga Anda dapat memilih yang paling sesuai dengan kebutuhan dan gaya hidup Anda. Menggunakan teknologi dapat memberikan motivasi tambahan serta akuntabilitas dalam perjalanan penurunan berat badan Anda.
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>

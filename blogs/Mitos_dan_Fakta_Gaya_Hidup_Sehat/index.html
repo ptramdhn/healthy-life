@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mitos dan Fakta Gaya Hidup Sehat yang Harus Kamu Tahu</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2e8cc;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#blog" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>Mitos dan Fakta Gaya Hidup Sehat yang Harus Kamu Tahu</h1>
+        <p>Oleh: ELZIAH CHOLIFAH TASLIM</p>
+        <img
+          src="../../asset/artikel7.jpg"
+          alt="Hidup Sehat"
+          class="center-image"
+        />
+      </header>
+      <main id="content">
+        <!-- Konten akan dimuat melalui JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 Fit Life Guide</p>
+      </footer>
+    </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Saat ini, banyak sekali informasi yang beredar mengenai gaya hidup sehat. Sayangnya, tidak
+                semua informasi tersebut benar. Beberapa di antaranya hanyalah mitos yang keliru, bahkan
+                bisa menyesatkan. Penting bagi kita untuk mengetahui perbedaan antara mitos dan fakta agar
+                tidak terjebak dalam kebiasaan yang salah. Berikut adalah beberapa mitos dan fakta tentang
+                gaya hidup sehat yang perlu kamu ketahui. Salah satu mitos yang cukup populer adalah
+                anggapan bahwa 
+            </article>
+            <ol>
+                <li>
+                    <article>
+                        <strong>"semakin banyak berolahraga, semakin sehat tubuh kita."</strong><br>
+                        Faktanya, berolahraga memang baik untuk kesehatan, tetapi terlalu banyak
+                        berolahraga tanpa istirahat yang cukup justru bisa berdampak buruk. Tubuh
+                        membutuhkan waktu untuk pemulihan dan perbaikan otot setelah aktivitas fisik.
+                        Melakukan latihan secara berlebihan dapat menyebabkan cedera dan kelelahan.
+                        Jadi, yang terpenting adalah melakukan olahraga dengan intensitas yang sesuai
+                        dan memberikan waktu istirahat yang cukup.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>"Makan karbohidrat akan membuat berat badan naik."</strong><br>
+                        Ini adalah kesalahpahaman yang banyak dipegang oleh orang yang sedang diet. Faktanya, karbohidrat adalah sumber energi utama tubuh yang dibutuhkan untuk beraktivitas sehari-hari. Karbohidrat kompleks, seperti yang terdapat dalam biji-bijian, sayuran, dan buah-buahan, sebaiknya tetap dikonsumsi dalam porsi yang seimbang. Kenaikan berat badan lebih sering disebabkan oleh konsumsi kalori yang berlebihan dan kurangnya aktivitas fisik, bukan semata-mata karena karbohidrat.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>"Menghindari lemak sepenuhnya adalah cara terbaik untuk sehat."</strong><br>
+                        Mitos ini membuat banyak orang takut mengonsumsi makanan yang mengandung lemak. Padahal, lemak sehat seperti yang terdapat dalam alpukat, kacang-kacangan, dan minyak zaitun sangat bermanfaat bagi tubuh. Lemak baik membantu menjaga kesehatan jantung, mendukung fungsi otak, serta membantu penyerapan vitamin. Jadi, bukan lemak yang harus dihindari, melainkan jenis lemak jahat seperti lemak trans dan lemak jenuh berlebihan yang harus dikurangi.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>"Semua makanan organik selalu lebih sehat."</strong><br>
+                        Ini adalah salah satu mitos yang cukup sering disalahpahami. Meskipun makanan organik cenderung bebas dari pestisida dan bahan kimia, tidak semua makanan organik lebih bernutrisi daripada versi non-organiknya. Beberapa penelitian menunjukkan bahwa perbedaan nutrisi antara makanan organik dan non-organik tidak selalu signifikan. Yang terpenting adalah mengonsumsi makanan yang segar dan bergizi, terlepas dari apakah itu organik atau tidak.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>"Diet detoks dapat membersihkan tubuh dari racun."</strong><br>
+                        Banyak produk diet detoks yang mengklaim bisa mengeluarkan racun dari tubuh hanya dengan mengonsumsi jus tertentu atau suplemen khusus. Namun, faktanya tubuh sudah memiliki sistem detoksifikasi alami yang bekerja melalui organ seperti hati dan ginjal. Diet detoks ekstrem justru bisa membahayakan kesehatan, terutama jika dilakukan dalam jangka panjang. Yang sebaiknya dilakukan adalah mengonsumsi makanan sehat, minum air yang cukup, dan menjaga pola makan yang seimbang untuk mendukung sistem detoksifikasi tubuh secara alami.
+                    </article>
+                </li>
+            </ol>
+            <article>
+                Dengan mengetahui perbedaan antara mitos dan fakta ini, kita bisa membuat pilihan yang
+                lebih bijak dalam menjalani gaya hidup sehat. Hindari informasi yang tidak memiliki dasar
+                ilmiah dan jangan mudah percaya pada tren kesehatan yang tidak terbukti. Kunci utama gaya
+                hidup sehat adalah keseimbangan, konsistensi, dan memahami apa yang benar-benar
+                dibutuhkan oleh tubuh kita. 
+            </article>
+            <br>
+            <article>
+                Keyword: #Mitosfaktadiet #Infoseputardiet #Perbedaanmitosfakta #Gayahidupsehat
+#Healthylifestyle
+            </article>
+            <br>
+            <article>
+                Referensi : <br>
+                <a href="https://www.antaranews.com/berita/3930543/ini-lima-fakta-dan-mitos-seputar-pola-makan-sehat">
+                    https://www.antaranews.com/berita/3930543/ini-lima-fakta-dan-mitos-seputar-pola-makan-sehat
+                </a>
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>
