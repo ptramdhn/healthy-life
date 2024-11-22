@@ -4,7 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cara Hidup Sehat</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f6f6;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #2c3e50;
+        color: white;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
   </head>
   <body>
     <nav id="navbar" class="navbar">
@@ -29,5 +115,115 @@
         <p>&copy; 2024 Fit Life Guide</p>
       </footer>
     </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Hidup sehat adalah keinginan banyak orang, namun seringkali kita merasa bahwa mencapai kesehatan optimal membutuhkan usaha yang besar dan rumit. Padahal, cara hidup sehat itu sebenarnya sangat sederhana dan bisa dimulai dari langkah kecil yang mudah diterapkan dalam kehidupan sehari-hari. Berikut adalah beberapa cara hidup sehat yang bisa Anda coba:
+            </article>
+            <ol>
+                <li>
+                    <article>
+                        <strong>Makan dengan Porsi yang Seimbang</strong><br>
+                        Makanan adalah sumber energi dan nutrisi bagi tubuh, namun penting untuk memperhatikan keseimbangan dalam pola makan. Cobalah untuk:
+                    </article>
+                    <ul>
+                        <li>Makan sayur dan buah di setiap hidangan.</li>
+                        <li>Kurangi makanan olahan dan makanan dengan gula tinggi.</li>
+                        <li>Makan dalam porsi yang tepat, hindari makan berlebihan.</li>
+                    </ul>
+                </li>
+                <li>
+                    <article>
+                        <strong>Rutin Berolahraga</strong><br>
+                        Olahraga bukan hanya untuk menurunkan berat badan, tetapi juga untuk menjaga kesehatan jantung, otot, dan tulang. Anda tidak perlu berolahraga secara ekstrem, cukup lakukan aktivitas fisik ringan seperti:
+                    </article>
+                    <ul>
+                        <li>Berjalan kaki 30 menit setiap hari.</li>
+                        <li>Berlarian ringan atau mengikuti yoga.</li>
+                        <li>Gunakan tangga daripada lift.</li>
+                    </ul>
+                </li>
+                <li>
+                    <article>
+                        <strong>Cukup Tidur</strong><br>
+                        Tidur yang cukup sangat penting untuk pemulihan tubuh dan kesehatan mental. Usahakan untuk tidur antara 7 hingga 8 jam setiap malam. Tidur yang berkualitas membantu Anda lebih fokus dan produktif di keesokan harinya.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Minum Air Putih yang Cukup</strong><br>
+                        Tidur yang cukup sangat penting untuk pemulihan tubuh dan kesehatan mental. Usahakan untuk tidur antara 7 hingga 8 jam setiap malam. Tidur yang berkualitas membantu Anda lebih fokus dan produktif di keesokan harinya.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Kelola Stres dengan Baik</strong><br>
+                        Stres yang tidak terkelola dengan baik dapat berdampak negatif pada kesehatan. Carilah cara untuk mengurangi stres, seperti:
+                    </article>
+                    <ul>
+                        <li>Melakukan meditasi atau pernapasan dalam.</li>
+                        <li>Menghabiskan waktu dengan orang yang disayangi.</li>
+                        <li>Melakukan hobi atau aktivitas yang Anda nikmati.</li>
+                    </ul>
+                </li>
+                <li>
+                    <article>
+                        <strong>Jaga Kebersihan Diri dan Lingkungan</strong><br>
+                        Kebersihan tubuh dan lingkungan sekitar juga memengaruhi kesehatan. Cuci tangan dengan sabun secara rutin, mandi secara teratur, dan pastikan lingkungan rumah Anda bersih dari kuman dan debu
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Periksa Kesehatan Secara Berkala</strong><br>
+                        Meskipun Anda merasa sehat, pemeriksaan rutin tetap penting untuk mendeteksi masalah kesehatan sejak dini. Kunjungi dokter setidaknya setahun sekali untuk memeriksa tekanan darah, kadar gula darah, dan kolesterol.
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <strong>Bersyukur dan Tetap Positif</strong><br>
+                        Mempunyai pola pikir positif dapat meningkatkan kualitas hidup Anda. Luangkan waktu untuk bersyukur atas hal-hal baik yang Anda miliki. Kebiasaan ini dapat meningkatkan kesehatan mental dan fisik Anda
+                    </article>
+                </li>
+            </ol>
+            <article>
+                Hidup sehat tidak harus rumit atau mahal. Dengan menjalani kebiasaan sederhana seperti makan seimbang, rutin berolahraga, tidur cukup, dan mengelola stres dengan baik, Anda sudah berada di jalur yang tepat menuju hidup yang lebih sehat dan bahagia. Ingatlah, perubahan kecil yang konsisten bisa membawa dampak besar bagi kesehatan Anda.
+            </article>
+            <br>
+            <article>
+                <strong>Keyword:</strong><br>
+                Hidup Sehat, Pola Makan Seimbang, Olahraga Rutin, Tidur Cukup, Hidrasi Tubuh, Kelola Stres, Kebersihan Diri, Pemeriksaan Kesehatan, Pikiran Positif
+            </article>
+            <br>
+            <article>
+                <strong>Referensi:</strong><br>
+                <a href="https://www.halodoc.com/kesehatan/hidup-sehat?srsltid=AfmBOooSyPA7Ui9Z7I_Lq5cWn8LN5j6JKfa7f8MIXnAtFj6Dyr0X_Ok1">
+                    https://www.halodoc.com/kesehatan/hidup-sehat?srsltid=AfmBOooSyPA7Ui9Z7I_Lq5cWn8LN5j6JKfa7f8MIXnAtFj6Dyr0X_Ok1
+                </>
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
   </body>
 </html>
