@@ -150,7 +150,8 @@ section h3::after {
 }
 #aboutus,
 #team,
-#blog {
+#blog,
+#content{
   text-align: center;
 }
 section p.ringkasan {
