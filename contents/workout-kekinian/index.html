@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Life - Live Better, Feel Healthier</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#content" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="layar-penuh">
+      <section style="background-color: #236130; color: #f2e8cc" id="team">
+        <div class="layar-dalam">
+          <h3 style="line-height: 1.2">
+            Seru dan Asyik! Coba Workout Kekinian dengan Iringan Lagu Favoritmu!
+          </h3>
+          <!-- <p class="ringkasan">
+            Meet our passionate team members from around the world, dedicated to
+            inspiring a healthier lifestyle through knowledge, innovation, and
+            community. Together, we’re committed to making healthy living
+            accessible for everyone.
+          </p> -->
+          <div class="slider">
+            <div class="slidesDua">
+              <div class="slideDua">
+                <img src="../../asset/Workout.png" />
+              </div>
+              <div class="slideDua">
+                <img src="../../asset/MadFit.png" />
+                <a
+                  href="https://www.youtube.com/watch?si=eAA411mIN_OvC1-F&v=p3zbb6I8Vr8&feature=youtu.be"
+                  target="_blank"
+                >
+                  <h1
+                    style="font-size: x-large; line-height: 1.2; color: #f2e8cc"
+                  >
+                    Nonton Selengkapnya Disini!
+                  </h1>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="../../asset/1.png" />
+                <a
+                  href="https://youtu.be/6AqH3O1iVi4?si=EHH9fEZChs1Xjb1g"
+                  target="_blank"
+                >
+                  <h1
+                    style="font-size: x-large; line-height: 1.2; color: #f2e8cc"
+                  >
+                    Nonton Selengkapnya Disini!
+                  </h1>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="../../asset/workout2.png" />
+                <a
+                  href="https://youtu.be/bphl_7Boe0s?si=TX-qTbYt6eOGsNHN"
+                  target="_blank"
+                >
+                  <h1
+                    style="font-size: x-large; line-height: 1.2; color: #f2e8cc"
+                  >
+                    Nonton Selengkapnya Disini!
+                  </h1>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="../../asset/workout3.png" />
+                <a
+                  href="https://youtu.be/SsBQKY3cvME?si=tOH5_Lve-5PNs4Rl"
+                  target="_blank"
+                >
+                  <h1
+                    style="font-size: x-large; line-height: 1.2; color: #f2e8cc"
+                  >
+                    Nonton Selengkapnya Disini!
+                  </h1>
+                </a>
+              </div>
+              <div class="slideDua">
+                <img src="../../asset/workout4.png" />
+                <a href="https://youtu.be/59ZnUHNwI0c?si=p" target="_blank">
+                  <h1
+                    style="font-size: x-large; line-height: 1.2; color: #f2e8cc"
+                  >
+                    Nonton Selengkapnya Disini!
+                  </h1>
+                </a>
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlideDua(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlideDua(1)">&#10095;</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      let slideIndex = 0;
+
+      function showSlidesDua() {
+        const slides = document.querySelector(".slidesDua");
+        const totalSlides = document.querySelectorAll(".slideDua").length;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      function moveSlideDua(n) {
+        slideIndex += n;
+        showSlidesDua();
+      }
+
+      // Initialize the slider
+      showSlidesDua();
+
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+    </script>
+  </body>
+</html>
