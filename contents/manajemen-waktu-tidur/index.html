@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Life - Live Better, Feel Healthier</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <style>
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#content" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="layar-penuh">
+      <section style="background-color: #236130; color: #f2e8cc" id="team">
+        <div class="layar-dalam">
+          <h3 style="line-height: 1.2">
+            Tips Manajemen Waktu Tidur untuk Hidup Sehat
+          </h3>
+          <!-- <p class="ringkasan">
+            Meet our passionate team members from around the world, dedicated to
+            inspiring a healthier lifestyle through knowledge, innovation, and
+            community. Together, we’re committed to making healthy living
+            accessible for everyone.
+          </p> -->
+          <div class="slider">
+            <div class="slidesSatu">
+              <div class="slideSatu">
+                <img src="../../asset/Wake Refreshed (2).png" />
+              </div>
+              <div class="slideSatu">
+                <img src="../../asset/2.png" />
+              </div>
+              <div class="slideSatu">
+                <img src="../../asset/3.png" />
+              </div>
+              <div class="slideSatu">
+                <img src="../../asset/4.png" />
+              </div>
+              <div class="slideSatu">
+                <img src="../../asset/5.png" />
+              </div>
+              <div class="slideSatu">
+                <img src="../../asset/6.png" />
+              </div>
+            </div>
+            <button class="prev" onclick="moveSlideSatu(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlideSatu(1)">&#10095;</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      let slideIndex = 0;
+
+      function showSlidesSatu() {
+        const slides = document.querySelector(".slidesSatu");
+        const totalSlides = document.querySelectorAll(".slideSatu").length;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      function showSlidesDua() {
+        const slides = document.querySelector(".slidesDua");
+        const totalSlides = document.querySelectorAll(".slideDua").length;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        if (slideIndex < 0) slideIndex = totalSlides - 1;
+        slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      function moveSlideSatu(n) {
+        slideIndex += n;
+        showSlidesSatu();
+      }
+
+      function moveSlideDua(n) {
+        slideIndex += n;
+        showSlidesDua();
+      }
+
+      // Initialize the slider
+      showSlidesSatu();
+      showSlidesDua();
+    </script>
+  </body>
+</html>
