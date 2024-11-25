@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Rahasia Hidup Sehat: Tips Mudah untuk Hidup Lebih Sehat, Bahagia, dan
+      Produktif
+    </title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2e8cc;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#blog" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>
+          Rahasia Hidup Sehat: Tips Mudah untuk Hidup Lebih Sehat, Bahagia, dan
+          Produktif
+        </h1>
+        <img
+          src="../../asset/Gambar1.jpg"
+          alt="Hidup Sehat"
+          class="center-image"
+        />
+      </header>
+      <main id="content">
+        <!-- Konten akan dimuat melalui JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 Fit Life Guide</p>
+      </footer>
+    </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Hidup sehat bukan hanya sekadar tren, tetapi sebuah kebutuhan untuk memastikan kualitas hidup yang lebih baik. Banyak orang menganggap memulai hidup sehat itu sulit, tetapi sebenarnya ada langkah-langkah sederhana yang dapat Anda terapkan setiap hari. Artikel ini akan membahas beberapa tips praktis untuk membantu Anda memulai perjalanan menuju gaya hidup sehat.
+            </article>
+            <ol>
+              <li>
+                <article>
+                  <strong>Pilih Pola Makan yang Seimbang</strong><br>
+                  Makanan yang Anda konsumsi sangat mempengaruhi kesehatan fisik dan mental Anda. Berikut adalah panduan sederhana:  
+                </article>
+                <ol>
+                  <li>
+                    <article>
+                      <strong>Kaya serat:</strong> Serat membantu pencernaan dan menjaga kesehatan usus. Konsumsilah buah, sayuran, dan biji-bijian.  
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <strong>Protein:</strong> Pilih sumber protein berkualitas seperti ayam tanpa lemak, ikan, telur, atau kacang-kacangan untuk memperbaiki dan membangun jaringan tubuh.  
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <strong>Rendah lemak:</strong> Batasi konsumsi makanan tinggi lemak jenuh seperti gorengan dan makanan cepat saji. Gantilah dengan lemak sehat dari alpukat, kacang-kacangan, atau minyak zaitun.  
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <strong>Kurangi gula:</strong> Gula berlebih dapat menyebabkan lonjakan energi yang cepat diikuti rasa lemas. Pilih pemanis alami seperti madu atau konsumsi buah segar.  
+                    </article>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <article>
+                  <strong>Aktivitas Fisik yang Mudah Dilakukan</strong><br>
+                  Tidak perlu memaksakan diri dengan olahraga berat. Aktivitas sederhana seperti berjalan kaki selama 30 menit setiap hari dapat memberikan banyak manfaat:  
+                </article>
+                <ol>
+                  <li>
+                    Membantu menjaga berat badan ideal.  
+                  </li>
+                  <li>
+                    Meningkatkan kesehatan jantung dan paru-paru.  
+                  </li>
+                  <li>
+                    Mengurangi stres dan meningkatkan suasana hati.  
+                  </li>
+                </ol>
+                <p>
+                  <strong>Tips:</strong> Jika Anda sibuk, cobalah berjalan kaki saat istirahat makan siang atau parkir kendaraan sedikit lebih jauh dari tujuan.  
+                </p>
+              </li>
+              <li>
+                <article>
+                  <strong>Rutin Mengelola Stres</strong><br>
+                  Stres yang berlebihan dapat mempengaruhi kesehatan fisik dan mental. Beberapa cara efektif untuk mengelolanya meliputi:  
+                </article>
+                <ol>
+                  <li>
+                    <article>
+                      <strong>Meditasi atau pernafasan dalam:</strong> Melatih pernapasan perlahan untuk menenangkan pikiran.  
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <strong>Luangkan waktu untuk hobi:</strong> Temukan kegiatan yang Anda nikmati untuk membantu melepas penat.  
+                    </article>
+                  </li>
+                  <li>
+                    <article>
+                      <strong>Tidur cukup:</strong> Pastikan Anda tidur 7-8 jam setiap malam agar tubuh memiliki waktu untuk memulihkan diri.  
+                    </article>
+                  </li>
+                </ol>
+              </li>
+              <li>
+                <article>
+                  <strong>Minum Air yang Cukup</strong><br>
+                  Hidrasi adalah kunci kesehatan. Air membantu proses metabolisme, meningkatkan energi, dan menjaga kulit tetap sehat. Rekomendasi umum adalah minum minimal 8 gelas air per hari, atau lebih jika Anda aktif secara fisik.  
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Jangan Lupakan Hubungan Sosial</strong><br>
+                  Kehidupan sosial yang sehat berperan penting dalam kebahagiaan dan kesejahteraan Anda. Habiskan waktu bersama keluarga dan teman-teman, berbagi cerita, atau sekadar menikmati momen bersama.  
+                </article>
+              </li>
+            </ol>
+            <article>
+              <strong>Mulai Sekarang!</strong><br>  
+              Langkah kecil yang Anda ambil hari ini dapat membawa perubahan besar di masa depan. Jadikan hidup sehat sebagai bagian dari rutinitas Anda dan nikmati manfaatnya. Bagikan tips ini kepada teman dan keluarga untuk bersama-sama menjalani hidup lebih baik.
+            </article>
+            <br>
+            <article>
+              Hidup sehat adalah investasi terbaik untuk masa depan Anda!
+            </article>
+            <br>
+            <article>
+              Teman-teman juga bisa nonton beberapa video di link di bawah ini yang sangat membantu untuk menjaga kesehatan agar tetap sehat dan produktif:
+            </article>
+            <ol>
+              <li>
+                <article>
+                  <a href="https://vt.tiktok.com/ZSjXJdRYe/" target="_blank">https://vt.tiktok.com/ZSjXJdRYe/ </a><br>
+                  <img src="../../asset/Gambar2.jpg" />
+                </article>
+              </li>
+              <li>
+                <article>
+                  <a href="https://vt.tiktok.com/ZSjXJe5F3/" target="_blank">https://vt.tiktok.com/ZSjXJe5F3/ </a><br>
+                  <img src="../../asset/Gambar3.jpg" />
+                </article>
+              </li>
+            </ol>
+            <br>
+            <article>
+                Referensi foto : <br>
+                <a href="https://images.app.goo.gl/eK4qGx8ZXwY17Jqd8">
+                    https://images.app.goo.gl/eK4qGx8ZXwY17Jqd8
+                </a>
+            </article>
+            <br>
+            <article>
+                Referensi artikel : <br>
+                <a href="https://www.fimela.com/lifestyle/read/5552897/tips-hidup-sehat-dan-bahagia-memulai-pola-hidup-sehat-dengan-mudah?page=2">
+                    https://www.fimela.com/lifestyle/read/5552897/tips-hidup-sehat-dan-bahagia-memulai-pola-hidup-sehat-dengan-mudah?page=2
+                </a>
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>
