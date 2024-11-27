@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kunci Menjaga Kesehatan Optimal</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f2e8cc;
+        color: #333;
+      }
+
+      /* Navbar Styles */
+      .navbar {
+        background-color: #de3891;
+        color: #f2e8cc;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: top 0.3s; /* Animasi transisi */
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .center-image {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%; /* Sesuai dengan lebar container */
+        width: 60%; /* Medium, bisa diubah ke 80% untuk large */
+        height: auto;
+        border-radius: 8px; /* Opsional, memberi sudut yang lembut */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Opsional, memberi bayangan */
+      }
+
+      .container {
+        padding-top: 60px;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 2em;
+        color: #2c3e50;
+      }
+
+      header p {
+        font-size: 1.1em;
+        color: #7f8c8d;
+      }
+
+      main {
+        margin-top: 20px;
+      }
+
+      main section {
+        margin-bottom: 20px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 0.9em;
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <a href="../../index.html#blog" class="navbar-brand">Back Home</a>
+    </nav>
+    <div class="container">
+      <header>
+        <h1>Kunci Menjaga Kesehatan Optimal</h1>
+        <p>Oleh: Ni Made Anantha Kusuma Wardani</p>
+        <img
+          src="../../asset/kunci-menjaga.jpg"
+          alt="Hidup Sehat"
+          class="center-image"
+        />
+      </header>
+      <main id="content">
+        <!-- Konten akan dimuat melalui JavaScript -->
+      </main>
+      <footer>
+        <p>&copy; 2024 Fit Life Guide</p>
+      </footer>
+    </div>
+    <script>
+      let lastScrollTop = 0; // Menyimpan posisi scroll terakhir
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", function () {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+          // Jika scroll ke bawah, sembunyikan navbar
+          navbar.style.top = "-60px"; // Menyembunyikan navbar (sesuaikan dengan tinggi navbar)
+        } else {
+          // Jika scroll ke atas, tampilkan navbar
+          navbar.style.top = "0";
+        }
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Untuk mencegah scroll negatif
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const content = `
+        <section>
+            <article>
+                Pola hidup sehat adalah cara menjalani kehidupan yang bertujuan untuk meminimalisir risiko penyakit serius dan kematian dini. Menurut Organisasi Kesehatan Dunia (WHO), pola hidup sehat mencakup berbagai aspek, mulai dari pola makan yang seimbang hingga aktivitas fisik yang cukup, serta menjaga kesehatan mental dan lingkungan. Dengan menerapkan gaya hidup sehat, seseorang dapat meningkatkan kualitas hidup dan kesejahteraan secara keseluruhan.
+            </article>
+            <p>Komponen Utama Pola Hidup Sehat</p>
+            <ol>
+              <li>
+                <article>
+                  <strong>Pola Makan Sehat</strong><br>
+                  Mengonsumsi makanan bergizi seimbang yang mencakup karbohidrat, protein, lemak sehat, serta vitamin dan mineral sangat penting untuk mendukung fungsi tubuh. Makanan segar seperti buah dan sayuran harus menjadi bagian utama dari diet sehari-hari.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Aktivitas Fisik</strong><br>
+                  Rutin berolahraga minimal 30 menit per hari dapat membantu menjaga berat badan, meningkatkan metabolisme, dan mengurangi risiko penyakit kronis seperti diabetes dan penyakit jantung. Olahraga juga berkontribusi pada kesehatan mental dengan meningkatkan produksi hormon endorfin yang membuat seseorang merasa lebih bahagia.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Istirahat yang Cukup</strong><br>
+                  Tidur yang berkualitas sangat penting untuk pemulihan tubuh. Kurang tidur dapat mempengaruhi kesehatan fisik dan mental, sehingga penting untuk menjaga pola tidur yang baik.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Menghindari Kebiasaan Buruk</strong><br>
+                  Menghindari merokok, konsumsi alkohol berlebihan, serta makanan cepat saji adalah langkah penting dalam menjaga kesehatan. Kebiasaan buruk ini dapat meningkatkan risiko berbagai penyakit serius.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Menjaga Kesehatan Mental</strong><br>
+                  Kesehatan mental sama pentingnya dengan kesehatan fisik. Melakukan aktivitas positif seperti meditasi atau hobi dapat membantu mengurangi stres dan meningkatkan kesejahteraan mental.
+                </article>
+              </li>
+            </ol>
+            <p><strong>Manfaat Pola Hidup Sehat</strong></p>
+            <ol>
+              <li>
+                <article>
+                  <strong>Mencegah Penyakit</strong><br>
+                  Dengan menerapkan pola hidup sehat, risiko terkena penyakit seperti obesitas, diabetes, dan penyakit jantung dapat diminimalisir.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Meningkatkan Energi</strong><br>
+                  Nutrisi yang baik dan olahraga teratur dapat meningkatkan tingkat energi sehari-hari, memungkinkan individu untuk lebih produktif dalam aktivitas mereka.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Meningkatkan Kesejahteraan Mental</strong><br>
+                  Aktivitas fisik dan pola makan yang baik berkontribusi pada suasana hati yang lebih baik dan kesehatan mental yang stabil.
+                </article>
+              </li>
+            </ol>
+            <p><strong>Langkah-Langkah Memulai Pola Hidup Sehat</strong></p>
+            <ol>
+              <li>
+                <article>
+                  <strong>Evaluasi Kebiasaan Saat Ini</strong><br>
+                  Identifikasi kebiasaan buruk yang perlu diubah.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Tetapkan Tujuan Realistis</strong><br>
+                  Buatlah tujuan kecil yang dapat dicapai untuk memudahkan transisi ke gaya hidup sehat.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Dapatkan Dukungan</strong><br>
+                  Libatkan keluarga atau teman untuk mendapatkan dukungan dalam perjalanan menuju pola hidup sehat.
+                </article>
+              </li>
+              <li>
+                <article>
+                  <strong>Konsisten</strong><br>
+                  Buatlah rutinitas harian yang mencakup semua aspek pola hidup sehat.
+                </article>
+              </li>
+            </ol>
+            <br>
+            <article>Referensi video yang dapat membantu kalian untuk tetap menjaga pola hidup sehat : <br>
+            <a href="https://vt.tiktok.com/ZSj4S193Y/" target="_blank">
+                  https://vt.tiktok.com/ZSj4S193Y/
+                </a><br>
+              <a href="https://vt.tiktok.com/ZSj4BvsMX/" target="_blank">
+                  https://vt.tiktok.com/ZSj4BvsMX/
+                </a>
+                </article>
+            <br>
+            <article>
+                Referensi artikel : <br>
+                <a href="https://www.kompasiana.com/catherinecanina/646f326082219957e61f5ac2/healthy-lifestyle-protect-your-future" target="_blank">
+                    https://www.kompasiana.com/catherinecanina/646f326082219957e61f5ac2/healthy-lifestyle-protect-your-future
+                </a>
+                <a href="https://www.liputan6.com/hot/read/4839149/pengertian-pola-hidup-sehat-tujuan-dan-cara-penerapannya-yang-wajib-diketahui" target="_blank">
+                    https://www.liputan6.com/hot/read/4839149/pengertian-pola-hidup-sehat-tujuan-dan-cara-penerapannya-yang-wajib-diketahui
+                </a>
+            </article>
+        </section>
+    `;
+
+        document.getElementById("content").innerHTML = content;
+      });
+    </script>
+  </body>
+</html>
